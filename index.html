@@ -1,176 +1,203 @@
 <!DOCTYPE html>
-<html lang="de" dir="ltr">
+<html lang="vi">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/scrolling-nav.css" rel="stylesheet">
-  <link href="assets/css/css.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <title>4G Smp | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4G SMP | Server Minecraft Việt Nam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1117;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #161b22 !important;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: #1fdf64 !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: #c9d1d9 !important;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #1fdf64 !important;
+    }
+
+    header.banner {
+      background: linear-gradient(135deg, #1fdf64, #2f6e35);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 60px 0 30px;
+      font-size: 2rem;
+      font-weight: 600;
+      border-bottom: 2px solid #1fdf64;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .game {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+    }
+
+    .game div {
+      max-width: 600px;
+    }
+
+    .gimg {
+      width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-custom {
+      background-color: #1fdf64;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: 600;
+      transition: 0.3s;
+      border-radius: 8px;
+    }
+
+    .btn-custom:hover {
+      background-color: #17c957;
+    }
+
+    .footer {
+      background-color: #161b22;
+      padding: 40px 0 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer p, .footer a {
+      color: #c9d1d9;
+    }
+
+    hr {
+      border-color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .game {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div id="index"> </section>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#home">4G Smp</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">4G SMP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#index">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#news">Mới</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Tính Năng</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">Tin Tức</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  </div>
-  <header class="bg-primary py-5 mb-5 banner">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-40 text-white mt-5 mb-2">Server Minecraft Việt Nam</h1>
-          <p class="display-30 lead mb-5 text-white"> Phiên bản: 1.20 - 1.21
-			</span>/100 </br>IP Server: 147.185.221.194:46652
- Tham gia ngay !!!</p>
-<a href="https://www.mediafire.com/file/evu418j54r90fit/5G+SMP.rar" target="_blank">
-  <button style="
-    background-color: #28a745;
-    color: white;
-    padding: 12px 24px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-  " onmouseover="this.style.backgroundColor='#218838'" onmouseout="this.style.backgroundColor='#28a745'">
-    📥 Tải về phiên bản phù hợp của server
-  </button>
-</a>
 
-
-        </div>
-      </div>
+  <!-- BANNER -->
+  <header class="banner" id="home">
+    <div class="container">
+      <h1>Server Minecraft Việt Nam</h1>
+      <p>Phiên bản: 1.20 - 1.21 | IP: 147.185.221.194:46652</p>
+      <a href="#" class="btn btn-custom mt-3">Tham Gia Ngay</a>
     </div>
   </header>
-  <section id="features">
-	 	<div class="h1"> <h2> Nổi Bật | Tính Năng </h2> </div>
-		<div class="test">
-         <ul class="noibat">
-  
 
-  </section>
-		<div id="games">
-			<h2>GAMES</h2>
-			<div class="game e">
-				<div>
-				</div>
-				<img alt="MyServer SkyBlock Server" class="gimg a" src="img/skyblock.png">
-			</div>
-
-			<hr>
-
-			<div class="game f">
-				<div>
-					<h3 id="survival">SURVIVAL 1.21</h3>
-					<p>Phần chơi mạng sinh tồn cho phép người chơi kết nối với một máy chủ Minecraft trung tâm. Điều này cho phép họ tương tác với nhau và làm việc cùng nhau (hoặc chống lại nhau) để đạt được mục tiêu Sinh tồn của họ. Điều này chủ yếu được sử dụng để bạn bè chơi trên một máy chủ riêng với nhau.</p>
-				</div>
-				<img alt="MyServer Factions Server" class="gimg b" src="img/factions.png">
-			</div>
-
-			<hr>
-
-			<div class="game g" id="">
-				<div>
-					<h3 id="">OP SKYBLOCK</h3>
-					<p>Coming soon </p>
-				</div>
-				<img alt="MyServer KitPvP Server" class="gimg c" src="img/kitpvp.png">
-			</div>
-
-			<hr>
-		</div>
-		<section id="team">
-		<div id="staff">
-			<div class="staff">
-				
-			</div>
-		</div> </section>		<section id="news">
-		<div id="announcement">
-			<div class="an-img">
-				<h2>NEWS & ANNOUNCEMENTS</h2>
-				<p class="an-t">
-					<b>KHAI MỞ MÁY CHỦ SURVIVAL 1.21</b>
-					<br><br>
-					Sau một thời gian bận học , hôm nay ad đã làm xong Server Survival phiên bản 1.21
-					<br><br>
-					New maps, new staff members, new plugins; the server has been reinvented.
-					Phần chơi mạng sinh tồn cho phép người chơi kết nối với một máy chủ Minecraft trung tâm. Điều này cho phép họ tương tác với nhau và làm việc cùng nhau (hoặc chống lại nhau) để đạt được mục tiêu Sinh tồn của họ. Điều này chủ yếu được sử dụng để bạn bè chơi trên một máy chủ riêng với nhau.</p>
-				
-					<br><br>
-					<a href="#" class="btn">Read More</a>
-				</p>
-			</div>
-		</div> </section>
-
-
-<div class="footer">
- <div class="tren">
-  <div class="chinh">
-
-	<p>  <img src="./assets/image/bannermc.png" /> </p>
-	 <div class="noidung"> 
-	    <h5>Minecraft server Việt Nam chất lượng cao </h5>
-		<p>Phiên bản: 1.20x->1.21x </p>
-		<p>Join Now !!! </p>
-	  
+  <!-- TÍNH NĂNG -->
+  <section id="features" class="container">
+    <h2 class="section-title">Nổi Bật | Tính Năng</h2>
+    <div class="game">
+      <img class="gimg" src="img/skyblock.png" alt="Skyblock">
+      <div>
+        <h3>OP SKYBLOCK</h3>
+        <p>Coming soon...</p>
+      </div>
     </div>
-	</div>
-   <div class="chinh">
-     		  
+    <hr>
+    <div class="game">
+      <img class="gimg" src="img/factions.png" alt="Survival">
+      <div>
+        <h3>SURVIVAL 1.21</h3>
+        <p>Phần chơi mạng sinh tồn cho phép người chơi kết nối với một máy chủ Minecraft trung tâm. Điều này cho phép họ tương tác với nhau và làm việc cùng nhau hoặc chống lại nhau để đạt được mục tiêu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="container">
+    <h2 class="section-title">Team</h2>
+    <p class="text-center">Đang cập nhật...</p>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="container">
+    <h2 class="section-title">NEWS & ANNOUNCEMENTS</h2>
+    <p><strong>KHAI MỞ MÁY CHỦ SURVIVAL 1.21</strong><br>
+      Sau một thời gian bận học, hôm nay ad đã làm xong Server Survival phiên bản 1.21.<br>
+      New maps, new staff members, new plugins — the server has been reinvented.<br><br>
+      <a href="#" class="btn btn-custom">Read More</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <img src="./assets/image/bannermc.png" alt="Banner">
+      <h5>Minecraft server Việt Nam chất lượng cao</h5>
+      <p>Phiên bản: 1.20x → 1.21x</p>
+      <p>Join Now !!!</p>
+      <hr>
+      <p>COPYRIGHT 2025 © Ntrkhangnek | Design by <a href="https://facebook.com/profile.php?id=61568207253698" target="_blank">Ntrkhangnek <i class="fab fa-facebook-f"></i></a></p>
+    </div>
   </div>
- </div>
- <div class="duoi">
-  <div class="server">
-    <p>COPYRIGHT 2025 © Ntrkhangnek</p>
-  </div>
-  <div class="me">
-  <p>Design By Ntrkhangnek
-  <a href="https://www.facebook.com/profile.php?id=61568207253698" target="_blank" > <i class="fab fa-facebook-f"> </i> </a> </p>
-  
-  
-</div>
-</div>
 
-</div>
-
-
-  	<script src="js/firefly.js" type="text/javascript"></script>	
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/firefly.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="assets/js/scrolling-nav.js"></script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
